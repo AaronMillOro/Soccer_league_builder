@@ -1,27 +1,27 @@
 ----------
-The team Sharks is composed by: 
-
-Diego Soto,YES,Robin and Sarika Soto
-Herschel Krustofski,YES,Hyman and Rachel Krustofski
-Bill Bon,YES,Sara and Jenny Bon
-Arnold Willis,NO,Claire Willis
-Joe Kavalier,NO,Sam and Elaine Kavalier
-Ben Finkelstein,NO,Aaron and Jill Finkelstein
-----------
 The team Dragons is composed by: 
 
-Joe Smith,YES,Jim and Jan Smith
+Diego Soto,YES,Robin and Sarika Soto
 Phillip Helm,YES,Thomas Helm and Eva Jones
-Suzane Greenberg,YES,Henrietta Dumas
+Joe Smith,YES,Jim and Jan Smith
+Eva Gordon,NO,Wendy and Mike Gordon
 Matt Gill,NO,Charles and Sylvia Gill
-Chloe Alaska,NO,David and Jamie Alaska
-Sammy Adams,NO,Jeff Adams
+Joe Kavalier,NO,Sam and Elaine Kavalier
 ----------
 The team Raptors is composed by: 
 
+Bill Bon,YES,Sara and Jenny Bon
 Les Clay,YES,Wynonna Brown
 Jill Tanner,YES,Clara Tanner
-Karl Saygan,YES,Heather Bledsoe
-Sal Dali,NO,Gala Dali
 Kimmy Stein,NO,Bill and Hillary Stein
-Eva Gordon,NO,Wendy and Mike Gordon
+Chloe Alaska,NO,David and Jamie Alaska
+Sammy Adams,NO,Jeff Adams
+----------
+The team Sharks is composed by: 
+
+Suzane Greenberg,YES,Henrietta Dumas
+Karl Saygan,YES,Heather Bledsoe
+Herschel Krustofski,YES,Hyman and Rachel Krustofski
+Arnold Willis,NO,Claire Willis
+Sal Dali,NO,Gala Dali
+Ben Finkelstein,NO,Aaron and Jill Finkelstein

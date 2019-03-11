@@ -9,9 +9,6 @@ import random
 
 FILE = 'soccer_players.csv'
 
-def clear_screen():
-    os.system('cls' if os.name == 'nt' else 'clear')
-
 # main program
 def league_builder():
 
@@ -58,21 +55,35 @@ def league_builder():
         writer = csv.writer(outputfile, delimiter = ',', lineterminator='\n')
 
 # Read the roaster dictionary
-        for key, players in roster.items():
+        for team, players in roster.items():
             outputfile.write('-' * 10)  # write export plain text
-            outputfile.write('\nThe team {} is composed by: \n\n'.format(key))
+            outputfile.write('\nThe team {} is composed by: \n\n'.format(team))
 
 # For a given player in the roster it will look for data in the first list of dictionaries 'all_players'
             for player in players:
                 for dictionary in all_players:
                     if player == dictionary.get('Name'):
-                        
+
+                        file_name = player.lower().split(" ")
+                        file_name = "_".join(file_name)
                         data = [player, dictionary.get('Soccer Experience'), dictionary.get('Guardian Name(s)')]
+# Assigns different practice dates in function of teams
+                        if team == 'Dragons':
+                            practice = 'tuesday at 14h'
+                        elif team == 'Raptors':
+                            practice = 'wednesday at 14h'
+                        else:
+                            practice = 'thursday at 14h'
+# Creates different letters for Guardian(s)
+                        with open(file_name + ".txt", 'w') as letter_output:
+                            letter = ['Dear', data[2], ':\nWe inform you that', data[0], 'was assigned to', team, 'team. \nThe first practice will be held next', practice,'. \nLooking forward to see you there.']
+                            letter_output.write(' '.join(letter))
+                        print('Letter to {} was created'.format(player))
+# Writes the player assigment in teams file
                         writer.writerow(data)
-    print('The file -- teams.txt -- was generated !')
+    print('\nThe file -- teams.txt -- was generated !')
     return
 
 if __name__ == '__main__':
     # Start the program 'league_builder'
-    clear_screen()
     league_builder()
